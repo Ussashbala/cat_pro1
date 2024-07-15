@@ -1,0 +1,135 @@
+body{
+    background-color: #c7e9d9;
+    
+    
+}
+.cat-walk{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border:#c7e9d9;
+    z-index: -1;
+    animation-name: catwalk;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes catwalk{
+    0%{
+        right: 0%;
+        
+    }
+    
+    100%{
+        right: 100%;
+        
+    }
+} 
+.cat{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+.cat-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit:fill;
+    
+}
+audio{
+    display: none;
+}
+.outertext{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.text{
+    height: 30px;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(59, 60, 60);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(48, 220, 177);
+
+}
+.yes{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.no{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+.cat-L-smile{
+    width: 200px;
+    height: 250px;
+    border-radius: 30%;
+    
+}
+#btn1{
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(240, 236, 38);
+    font-weight: bold;
+}
+.btn2{
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(236, 20, 38);
+    font-weight: bold;
+    
+}
+ .btn22{
+    animation-name: no;
+    animation-duration:0.5s;
+     animation-delay: 0.10s; 
+    /*animation-fill-mode:forwards;*/
+    animation-fill-mode: forwards;
+    background-color: brown;
+    position: sticky;
+    top:100px;
+    left: 100px;
+    
+    
+}
+
+@keyframes no{
+    0%{transform: translate(0px,0px);
+        
+    }
+    50%{transform: translate(-50px,100px);
+        rotate: 45deg;
+
+      }
+      /* 75%{transform: translateX(50px,50px)
+  
+      } */
+    100%{transform: translate(100px,100px);
+
+    }
+   
+    
+}
+
